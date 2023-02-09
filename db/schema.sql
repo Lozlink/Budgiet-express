@@ -13,7 +13,7 @@ CREATE TABLE transactions(
   type TEXT,
   amount INT,
   description TEXT,
-  created_on TIMESTAMP,
+  created_on DATE,
   user_id TEXT,
   balance NUMERIC,
   category TEXT

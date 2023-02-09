@@ -25,3 +25,15 @@ if (process.env.DATABASE_URL) {
 }
 
 module.exports = db
+
+// Above for production
+
+// const pg = require('pg')
+// const dbName = 'budgiet'
+
+// const db = new pg.Pool({
+//   database: dbName,
+//   password: process.env.DEV_DB_PASSWORD
+// })
+
+// module.exports = db
