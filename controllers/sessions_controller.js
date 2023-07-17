@@ -7,6 +7,7 @@ const User = require('../models/user');
 
 // Log the user in if the password matches the password digest
 router.post('/', (req, res) => {
+    
   console.log('i love you')
     const { email, password } = req.body;
     

@@ -8,7 +8,11 @@ router.get("/:id", (req, res) => {
   console.log(`userId: ${userId}`)
   Transactions
       .getAll(userId)
-      .then((transactions) => res.json(transactions));
+      .then((transactions) => {
+        console.log(transactions)
+        res.json(transactions)
+      });
+      
 });
 
 router.post('/', (req, res) => {
